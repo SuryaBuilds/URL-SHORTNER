@@ -154,7 +154,7 @@ app.get("/api/analytics/:shortCode", async (req, res) => {
   }
 });
 
-const PORT = 5000;
+const PORT = 5001;
 
 app.listen(PORT, () => {
   console.log(`Server Running On Port ${PORT}`);
