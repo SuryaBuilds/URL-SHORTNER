@@ -7,7 +7,7 @@ function App() {
   const [urls, setUrls] = useState([]);
   const [shortUrl, setShortUrl] = useState("");
 
-  const API = "http://localhost:5000";
+  const API = "http://localhost:5001";
 
   // Fetch URLs
   const getUrls = async () => {
