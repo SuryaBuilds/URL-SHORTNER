@@ -64,7 +64,7 @@ app.post("/api/shorten", async (req, res) => {
     res.status(201).json({
       success: true,
       originalUrl: newUrl.originalUrl,
-      shortUrl: `http://localhost:5000/${newUrl.shortCode}`,
+      shortUrl: `http://localhost:5001/${newUrl.shortCode}`,
     });
   } catch (error) {
     res.status(500).json({
@@ -143,7 +143,7 @@ app.get("/api/analytics/:shortCode", async (req, res) => {
 
     res.json({
       originalUrl: url.originalUrl,
-      shortUrl: `http://localhost:5000/${url.shortCode}`,
+      shortUrl: `http://localhost:5001/${url.shortCode}`,
       totalClicks: url.clicks,
       createdAt: url.createdAt,
     });
